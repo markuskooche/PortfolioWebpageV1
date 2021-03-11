@@ -1,8 +1,6 @@
 <template>
-    <section id="error">
-        <h1>404</h1>
-        <h2>Page Not Found</h2>
-        <router-link to="/" class="retro-btn">Go Home</router-link>
+    <section id="resume">
+        <h1>Coming Soon!</h1>
     </section>
 </template>
 
@@ -10,32 +8,21 @@
 
 <script>
 export default {
-    name: 'PageNotFound',
+name: "Resume"
 }
 </script>
 
 <!-- ----- ----- ----- ----- ----- ----- ----- STYLESHEET CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
 
 <style lang="scss">
-#error {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+#resume {
 
     h1 {
-        font-family: var(--font-code);
-        color: var(--accent-color);
-
-        font-size: clamp(90px, 18vw, 180px);
-    }
-
-    h2 {
         font-family: var(--font-mark);
         color: var(--font-color-accent);
 
         font-size: clamp(40px, 8vw, 80px);
-        padding-bottom: 30px;
+        text-align: center;
     }
 }
 </style>

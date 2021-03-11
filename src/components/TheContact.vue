@@ -7,11 +7,15 @@
     </section>
 </template>
 
+<!-- ----- ----- ----- ----- ----- ----- ----- VUE SCRIPT CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
+
 <script>
 export default {
     name: "TheContact"
 }
 </script>
+
+<!-- ----- ----- ----- ----- ----- ----- ----- STYLESHEET CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
 
 <style lang="scss">
 #contact {

@@ -2,9 +2,7 @@
     <div id="navbar">
         <nav :class="{ 'hide-navbar': !showNavbar, 'blur-effect': blurEffect }">
             <div class="navbar-container">
-                <a href="/" class="navbar-logo">
-                    koch.
-                </a>
+                <router-link to="/" class="navbar-logo">koch.</router-link>
                 <div class="navbar-links">
                     <ul>
                         <li>
@@ -17,7 +15,7 @@
                             <a href="/#contact"><span>03.</span>contact</a>
                         </li>
                     </ul>
-                    <a  href="/resume" id="resume">Resume</a>
+                    <router-link to="/resume" id="resume-btn">Resume</router-link>
                 </div>
                 <div id="navbar-sandwich" @click="sandwichToggle()">
                     <div id="sandwich-line-1"></div>
@@ -38,7 +36,11 @@
                 <li>
                     <a href="/#contact" @click="disableNavbar()">contact</a>
                 </li>
+                <li>
+                    <router-link to="/resume" @click="disableNavbar()">resume</router-link>
+                </li>
             </ul>
+
         </div>
     </div>
 </template>
@@ -290,7 +292,7 @@ nav {
             }
         }
 
-        #resume {
+        #resume-btn {
             transition: all 0.4s;
 
             color: var(--accent-color);
@@ -301,7 +303,7 @@ nav {
             border-radius: 5px;
         }
 
-        #resume:hover {
+        #resume-btn:hover {
             transition: all 0.4s;
             background-color: var(--accent-hover);
             box-shadow: inset 0 0 5px var(--accent-color), 2px 2px 5px var(--accent-color);

@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+ErrorDocument 404 /index.html
+
+RewriteRule ^\.htaccess$ - [F]

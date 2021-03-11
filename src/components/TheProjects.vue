@@ -10,6 +10,8 @@
     </section>
 </template>
 
+<!-- ----- ----- ----- ----- ----- ----- ----- VUE SCRIPT CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
+
 <script>
 import Project from '@/components/Project';
 
@@ -20,6 +22,8 @@ export default {
     },
 }
 </script>
+
+<!-- ----- ----- ----- ----- ----- ----- ----- STYLESHEET CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
 
 <style lang="scss">
 #projects {

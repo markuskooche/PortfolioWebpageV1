@@ -1,17 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import PageNotFound from '@/views/PageNotFound.vue';
+import Resume from '@/views/Resume.vue';
 import Home from '@/views/Home.vue';
 
 
 const routes = [
     {
         path: '/',
-        name: 'Home',
         component: Home,
     },
     {
+        path: '/resume',
+        component: Resume,
+    },
+    {
         path: '/404',
-        name: 'PageNotFound',
         component: PageNotFound,
     },
     {

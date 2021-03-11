@@ -31,6 +31,8 @@
     </section>
 </template>
 
+<!-- ----- ----- ----- ----- ----- ----- ----- VUE SCRIPT CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
+
 <script>
 import Language from '@/components/Language';
 
@@ -41,6 +43,8 @@ export default {
     }
 }
 </script>
+
+<!-- ----- ----- ----- ----- ----- ----- ----- STYLESHEET CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
 
 <style lang="scss">
 #about {

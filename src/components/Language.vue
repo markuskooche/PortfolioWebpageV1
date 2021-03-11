@@ -11,6 +11,8 @@
     </li>
 </template>
 
+<!-- ----- ----- ----- ----- ----- ----- ----- VUE SCRIPT CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
+
 <script>
 export default {
     props: {
@@ -34,6 +36,8 @@ export default {
     name: 'Language'
 }
 </script>
+
+<!-- ----- ----- ----- ----- ----- ----- ----- STYLESHEET CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
 
 <style lang="scss">
 .language {

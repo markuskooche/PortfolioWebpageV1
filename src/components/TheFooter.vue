@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <a href="https://www.github.com/markuskooche/PortfolioWebpage">
+        <a href="https://www.github.com/markuskooche/PortfolioWebpage" target="_blank">
             Designed & Built by Markus Koch
         </a>
     </footer>

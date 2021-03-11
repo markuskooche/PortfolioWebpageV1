@@ -5,12 +5,14 @@
         <p>{{ text }}</p>
         <div class="lg-container">
             <div>{{ tag }}</div>
-            <a :href="link">
+            <a :href="link" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></g></svg>
             </a>
         </div>
     </li>
 </template>
+
+<!-- ----- ----- ----- ----- ----- ----- ----- VUE SCRIPT CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
 
 <script>
 export default {
@@ -39,6 +41,8 @@ export default {
     name: 'Project',
 }
 </script>
+
+<!-- ----- ----- ----- ----- ----- ----- ----- STYLESHEET CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
 
 <style lang="scss">
 .project {
