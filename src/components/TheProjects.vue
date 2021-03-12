@@ -5,6 +5,7 @@
             <ul>
                 <Project project="PortfolioWebpage" date="February, 2021" text="First version of my personal portfolio website built with Vue.js. This project was for learning Vue.js." tag="Vue.js" link="https://github.com/markuskooche/PortfolioWebpage" />
                 <Project project="ChessGame" date="January, 2021" text="A chess engine with a GUI and different algorithms of computer-based opponents. Built completely object-oriented with Python." tag="Python" link="https://github.com/markuskooche/ChessGame" />
+                <Project project="CryptoCurrency" date="October, 2020" text="A simple implementation of a blockchain. This version also includes account details to better track transactions." tag="Python" link="https://github.com/markuskooche/CryptoCurrency" />
             </ul>
         </div>
     </section>
