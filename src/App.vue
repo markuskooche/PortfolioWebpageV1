@@ -71,8 +71,10 @@ export default {
     --background-shadow: #EBECED;
     --background-normal: #FAFAFA;
     --background-accent: #F1F4FA;
+    --background-opposite: #283446;
 
     --timeline-color: #B7BEC6;
+    --timeline-opposite-color: #616A77;
 
     --font-color-normal: #515D6E;
     --font-color-accent: #2D3845;
@@ -87,8 +89,10 @@ export default {
         --background-shadow: #131B28;
         --background-normal: #151E2C;
         --background-accent: #283446;
+        --background-opposite: #F1F4FA;
 
         --timeline-color: #616A77;
+        --timeline-opposite-color: #B7BEC6;
 
         --font-color-normal: #C6C8CD;
         --font-color-accent: #F7F7F7;

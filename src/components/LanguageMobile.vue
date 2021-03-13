@@ -1,9 +1,9 @@
 <template>
-    <div class="language-box" v-tilt>
-        <h2 class="name">{{ language }}</h2>
-        <a :href="link" target="_blank" class="click">Visit Now</a>
-        <div class="circle"></div>
-        <img :src="file" class="logo" alt="logo icon">
+    <div class="language-box-mobile">
+        <h2 class="mobile-name">{{ language }}</h2>
+        <a :href="link" target="_blank" class="mobile-click">Visit Now</a>
+        <div class="mobile-circle"></div>
+        <img :src="file" class="mobile-logo" alt="logo icon">
     </div>
 </template>
 
@@ -25,16 +25,15 @@ export default {
             required: true
         },
     },
-    name: 'Language'
+    name: 'LanguageMobile'
 }
 </script>
 
 <!-- ----- ----- ----- ----- ----- ----- ----- STYLESHEET CONFIGURATION ----- ----- ----- ----- ----- ----- ----- -->
 
 <style lang="scss">
-.language-box {
+.language-box-mobile {
     position: relative;
-    transform-style: preserve-3d;
 
     height: 340px;
     width: 240px;
@@ -44,32 +43,25 @@ export default {
     border: solid 1px var(--background-shadow);
     background-color: var(--background-accent);
 
-    .name {
-        opacity: 0;
+    .mobile-name {
         position: absolute;
 
-        top: 0;
+        top: 40px;
         left: 0;
 
         width: 100%;
         text-align: center;
         color: var(--background-opposite);
-
-        transition: 0.5s;
-        transform-style: preserve-3d;
-        transform: translate3d(0, 0, 75px);
     }
 
-    .click {
-        opacity: 0;
+    .mobile-click {
         position: absolute;
+        z-index: 1;
 
-        bottom: 0;
+        bottom: 25px;
         left: 50%;
 
-        transition: 0.5s;
-        transform-style: preserve-3d;
-        transform: translate3d(-50%, 0, 75px);
+        transform: translateX(-50%);
 
         color: white;
         padding: 10px 20px;
@@ -78,7 +70,7 @@ export default {
         background-color: var(--accent-color);
     }
 
-    .circle {
+    .mobile-circle {
         position: absolute;
 
         top: 50%;
@@ -86,51 +78,27 @@ export default {
         height: 180px;
         width: 180px;
 
-        transition: 0.5s;
-        transform-style: preserve-3d;
-        transform: translate3d(-50%, -50%, 50px);
+        transform: translate(-50%, -50%);
 
         border-radius: 50%;
         background-color: var(--background-opposite);
         box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.2);
     }
 
-    .logo {
+    .mobile-logo {
         position: absolute;
 
         top: 50%;
         left: 50%;
         width: 120px;
 
-        transition: 0.5s;
-        transform-style: preserve-3d;
-        transform: translate3d(-50%, -50%, 100px);
+        transform: translate(-50%, -50%);
     }
 }
 
-.language-box:hover {
-    .name {
-        top: 40px;
-        opacity: 1;
-    }
-
-    .click {
-        bottom: 25px;
-        opacity: 1;
-    }
-
-    .click:hover {
-        filter: brightness(125%);
-
-        @media (prefers-color-scheme: dark) {
-            filter: brightness(75%);
-        }
-    }
-}
-
-.language-box::before,
-.language-box::after {
-    opacity: 0;
+.language-box-mobile::before,
+.language-box-mobile::after {
+    opacity: 0.04;
     position: absolute;
 
     left: 50%;
@@ -143,18 +111,13 @@ export default {
     font-style: italic;
 }
 
-.language-box::before {
+.language-box-mobile::before {
     content: 'VIEW';
     top: 15px;
 }
 
-.language-box::after {
+.language-box-mobile::after {
     content: 'CODE';
     bottom: 10px;
-}
-
-.language-box:hover::before,
-.language-box:hover::after {
-    opacity: 0.04;
 }
 </style>
