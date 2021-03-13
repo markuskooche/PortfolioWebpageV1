@@ -46,7 +46,7 @@ export default {
     .mobile-name {
         position: absolute;
 
-        top: 40px;
+        top: 30px;
         left: 0;
 
         width: 100%;
@@ -56,9 +56,8 @@ export default {
 
     .mobile-click {
         position: absolute;
-        z-index: 1;
 
-        bottom: 25px;
+        bottom: 20px;
         left: 50%;
 
         transform: translateX(-50%);
@@ -94,30 +93,5 @@ export default {
 
         transform: translate(-50%, -50%);
     }
-}
-
-.language-box-mobile::before,
-.language-box-mobile::after {
-    opacity: 0.04;
-    position: absolute;
-
-    left: 50%;
-    transform: translateX(-50%);
-    transition: 0.5s;
-
-    color: var(--background-opposite);
-    font-size: 70px;
-    font-weight: 900;
-    font-style: italic;
-}
-
-.language-box-mobile::before {
-    content: 'VIEW';
-    top: 15px;
-}
-
-.language-box-mobile::after {
-    content: 'CODE';
-    bottom: 10px;
 }
 </style>

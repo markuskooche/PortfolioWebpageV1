@@ -1,6 +1,6 @@
 <template>
     <section id="about">
-        <h1><span class="number">01.</span>About<span class="slogan"> - the perfectionist</span></h1>
+        <h1><span class="number">01.</span>About</h1>
         <div class="about-container">
             <img src="../assets/images/portrait.jpg" alt="personal portrait" class="portrait">
             <p class="about-text">Hey, I am Markus Koch, a backend developer from Bavaria, DE.</p>
@@ -50,16 +50,13 @@ export default {
         font-family: var(--font-code);
         color: var(--font-color-accent);
         margin-bottom: 20px;
+        text-align: center;
         font-size: 35px;
 
         .number {
             color: var(--accent-color);
             font-size: 30px;
             padding-right: 5px;
-        }
-
-        .slogan {
-            color: var(--font-color-normal);
         }
     }
 

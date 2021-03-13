@@ -76,9 +76,11 @@ export default {
             root.style.setProperty('--popup-position-top', positionTop);
             root.style.setProperty('--popup-position-right', positionRight);
 
-            let reset = false;
+            let reset = true;
 
-            if (window.innerWidth > 640 && !reset) {
+            if (window.innerWidth > 640 && reset) {
+                window.onscroll = function() {};
+
                 const sandwich = document.getElementById('navbar-sandwich');
                 if (sandwich !== null) {
                     sandwich.classList.remove('sandwich-close');
@@ -94,28 +96,43 @@ export default {
 
                 const mobileNav = document.getElementById('navbar-links-mobile');
                 if (mobileNav !== null) {
+                    mobileNav.style.display = "none";
                     mobileNav.classList.remove('navbar-mobile-close');
                     mobileNav.classList.remove('navbar-mobile-open');
                 }
 
-                reset = true;
-            } else {
                 reset = false;
+            } else {
+                reset = true;
             }
         }
-        window.addEventListener('resize', setNavbarPopup)
-        setNavbarPopup()
+        setNavbarPopup();
+        window.addEventListener('resize', setNavbarPopup);
+
     },
 
     mounted () {
-        window.addEventListener('scroll', this.onScroll)
+        window.addEventListener('scroll', this.onScroll);
     },
 
     methods: {
+        enableScroll() {
+            window.onscroll = function() {};
+        },
+
+        disableScroll() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+            window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop);
+            };
+        },
+
         onScroll () {
             const currentScrollPosition = window.pageYOffset;
 
-            if (currentScrollPosition > 80) {
+            if (currentScrollPosition > 0) {
                 if (currentScrollPosition > this.lastScrollPosition) {
                     this.showNavbar = false;
                     this.blurEffect = false;
@@ -137,6 +154,7 @@ export default {
             const mobileNav = document.getElementById('navbar-links-mobile');
 
             if (sandwich.className === 'sandwich-close') {
+                this.disableScroll();
                 sandwich.classList.remove('sandwich-close');
                 sandwich.classList.add('sandwich-open');
                 dropdown.classList.remove('navbar-popup-close');
@@ -144,6 +162,7 @@ export default {
                 mobileNav.classList.remove('navbar-mobile-close');
                 mobileNav.classList.add('navbar-mobile-open');
             } else if (sandwich.className === 'sandwich-open') {
+                this.enableScroll();
                 sandwich.classList.remove('sandwich-open');
                 sandwich.classList.add('sandwich-close');
                 dropdown.classList.remove('navbar-popup-open');
@@ -152,6 +171,7 @@ export default {
                 mobileNav.classList.remove('navbar-mobile-open');
                 mobileNav.classList.add('navbar-mobile-close');
             } else {
+                this.disableScroll();
                 sandwich.classList.add('sandwich-open');
                 dropdown.classList.add('navbar-popup-open');
                 mobileNav.classList.add('navbar-mobile-open');

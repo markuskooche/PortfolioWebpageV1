@@ -57,7 +57,7 @@ export default {
 
         transition: 0.5s;
         transform-style: preserve-3d;
-        transform: translate3d(0, 0, 75px);
+        transform: translate3d(0, 0, 50px);
     }
 
     .click {
@@ -134,7 +134,8 @@ export default {
     position: absolute;
 
     left: 50%;
-    transform: translateX(-50%);
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, 0, 20px);
     transition: 0.5s;
 
     color: var(--background-opposite);
@@ -155,6 +156,6 @@ export default {
 
 .language-box:hover::before,
 .language-box:hover::after {
-    opacity: 0.04;
+    opacity: 0.05;
 }
 </style>
