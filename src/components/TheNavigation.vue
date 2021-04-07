@@ -154,7 +154,7 @@ export default {
             const mobileNav = document.getElementById('navbar-links-mobile');
 
             if (sandwich.className === 'sandwich-close') {
-                this.disableScroll();
+                //this.disableScroll();
                 sandwich.classList.remove('sandwich-close');
                 sandwich.classList.add('sandwich-open');
                 dropdown.classList.remove('navbar-popup-close');
@@ -162,7 +162,7 @@ export default {
                 mobileNav.classList.remove('navbar-mobile-close');
                 mobileNav.classList.add('navbar-mobile-open');
             } else if (sandwich.className === 'sandwich-open') {
-                this.enableScroll();
+                //this.enableScroll();
                 sandwich.classList.remove('sandwich-open');
                 sandwich.classList.add('sandwich-close');
                 dropdown.classList.remove('navbar-popup-open');
@@ -171,7 +171,7 @@ export default {
                 mobileNav.classList.remove('navbar-mobile-open');
                 mobileNav.classList.add('navbar-mobile-close');
             } else {
-                this.disableScroll();
+                //this.disableScroll();
                 sandwich.classList.add('sandwich-open');
                 dropdown.classList.add('navbar-popup-open');
                 mobileNav.classList.add('navbar-mobile-open');
@@ -204,7 +204,8 @@ $navbar-height: 80px;
 
 .hide-navbar {
     transition: all 0.3s;
-    transform: translateY(-$navbar-height);
+    transform-style: preserve-3d;
+    transform: translate3d(0, -$navbar-height, 200px);
 }
 
 .blur-effect {
@@ -215,7 +216,8 @@ $navbar-height: 80px;
 
 nav {
     transition: all 0.3s ease-out;
-    transform: translateY(0px);
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 200px);
     z-index: 10;
 
     position: fixed;
