@@ -8,7 +8,7 @@
 
 ## About the Project
 
-Version: 1.0.5
+Version: 1.1.0
 
 I built this website to introduce myself and my projects. The site was developed completely with Vue.js and served to get a taste of the framework.
 So don't expect this to be a perfectly structured Vue.js project.
@@ -87,3 +87,4 @@ The site is accessible at <a href="https://www.markuskooche.com/" target="_blank
 | 1.0.3   | new about language component           |
 | 1.0.4   | minor bug fixes                        |
 | 1.0.5   | minor bug fixes                        |
+| 1.1.0   | added the german cv                    |

@@ -13,6 +13,16 @@ const routes = [
         path: '/resume',
         component: Resume,
     },
+    /*
+    {
+        path: '/resume',
+        component: ResumeEnglish,
+    },
+    {
+        path: '/lebenslauf',
+        component: ResumeGerman,
+    },
+    */
     {
         path: '/404',
         component: PageNotFound,
