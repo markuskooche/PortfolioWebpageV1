@@ -1,14 +1,16 @@
-<h1 align="center">
-    PortfolioWebsite - v1
-</h1>
-<p align="center">
-    The first version of <a href="https://www.markuskooche.com" target="_blank">markuskooche.com</a> built with <a href="https://www.vuejs.org/" target="_blank">Vue.js</a>.
-</p>
+<div style="text-align: center;">
+   <h1>
+       PortfolioWebsite - v1
+   </h1>
+   <p>
+       The first version of <a href="https://www.markuskooche.com" target="_blank">markuskooche.com</a> built with <a href="https://www.vuejs.org/" target="_blank">Vue.js</a>.
+   </p>
+</div>
 
 
 ## About the Project
 
-Version: 1.1.0
+Version: 1.1.1
 
 I built this website to introduce myself and my projects. The site was developed completely with Vue.js and served to get a taste of the framework.
 So don't expect this to be a perfectly structured Vue.js project.
@@ -79,12 +81,18 @@ The site is accessible at <a href="https://www.markuskooche.com/" target="_blank
 
 ## Version history
 
-| Version | Description                            |
-|---------|----------------------------------------|
-| 1.0.0   | the first public version               |
-| 1.0.1   | minor bug fixes & static routing added |
-| 1.0.2   | new project & favicon added            |
-| 1.0.3   | new about language component           |
-| 1.0.4   | minor bug fixes                        |
-| 1.0.5   | minor bug fixes                        |
-| 1.1.0   | added the german cv                    |
+| Version | Description                                 |
+|---------|---------------------------------------------|
+| 1.0.0   | the first public version                    |
+| 1.0.1   | minor bug fixes & static routing added      |
+| 1.0.2   | new project & favicon added                 |
+| 1.0.3   | new about language component                |
+| 1.0.4   | minor bug fixes                             |
+| 1.0.5   | minor bug fixes                             |
+| 1.1.0   | added the german cv                         |
+| 1.1.1   | fixed a bug which did not open resume since |
+
+
+## Technologies
+[Vanilla Tilt](https://micku7zu.github.io/vanilla-tilt.js/index.html) <br/>
+[Vue.JS 3](https://vuejs.org)
