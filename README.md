@@ -1,11 +1,9 @@
-<div style="text-align: center;">
-   <h1>
-       PortfolioWebsite - v1
-   </h1>
-   <p>
-       The first version of <a href="https://www.markuskooche.com" target="_blank">markuskooche.com</a> built with <a href="https://www.vuejs.org/" target="_blank">Vue.js</a>.
-   </p>
-</div>
+<h1 align="center">
+   PortfolioWebsite - v1
+</h1>
+<p align="center">
+   The first version of <a href="https://www.markuskooche.com" target="_blank">markuskooche.com</a> built with <a href="https://www.vuejs.org/" target="_blank">Vue.js</a>.
+</p>
 
 
 ## About the Project
