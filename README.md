@@ -92,6 +92,10 @@ The site is accessible at <a href="https://www.markuskooche.com/" target="_blank
 | 1.1.2   | added licence type MIT  (and file)          |
 
 
+## Inspired by Brittany Chiang
+[Brittany Chiang](https://github.com/bchiang7/v4)
+
+
 ## Technologies
 [Vanilla Tilt](https://micku7zu.github.io/vanilla-tilt.js/index.html) <br/>
 [Vue.JS 3](https://vuejs.org)
