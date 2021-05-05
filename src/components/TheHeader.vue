@@ -68,7 +68,7 @@ header {
     }
 }
 
-@media (max-height: 560px) {
+@media (max-height: 610px) {
     header {
         padding: 80px 0;
     }

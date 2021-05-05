@@ -143,5 +143,9 @@ export default {
     }
 }
 
-
+@media (max-height: 400px) {
+    .sliders {
+        display: none;
+    }
+}
 </style>
