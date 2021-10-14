@@ -88,6 +88,7 @@ export default {
         --header-scroll-color: rgba(21, 30, 44, 0.85);
         --background-shadow: #131B28;
         --background-normal: #151E2C;
+        //--background-normal: black;
         --background-accent: #283446;
         --background-opposite: #F1F4FA;
 
@@ -103,6 +104,7 @@ export default {
 }
 
 * {
+    // TODO: maybe add "cursor: pointer;"
     box-sizing: border-box;
     padding: 0;
     margin: 0;

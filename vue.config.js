@@ -3,7 +3,7 @@ module.exports = {
         index: {
             entry: 'src/main.js',
             filename: 'index.html',
-            title: 'Markus Koch',
+            title: 'Markus Koch | Portfolio Webpage',
             //title: 'Markus Koch - Home',
         },
         /*
