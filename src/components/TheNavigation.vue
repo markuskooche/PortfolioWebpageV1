@@ -377,7 +377,8 @@ nav {
     }
 
     @keyframes line-1-close {
-        from {-webkit-transform: rotate(-45deg) translate(-7.5px, 8px);
+        from {
+            -webkit-transform: rotate(-45deg) translate(-7.5px, 8px);
             -moz-transform: rotate(-45deg) translate(-7.5px, 8px);
             -o-transform: rotate(-45deg) translate(-7.5px, 8px);
             transform: rotate(-45deg) translate(-7.5px, 8px);

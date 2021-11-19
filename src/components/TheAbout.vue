@@ -9,12 +9,12 @@
             <div v-if="!isMobile()" class="language-container">
                 <Language language="Python" link="https://github.com/markuskooche/ChessGame" file="./logos/python.svg" />
                 <Language language="Vue.js" link="https://github.com/markuskooche/PortfolioWebpage" file="./logos/vue.svg" />
-                <Language language="Java" link="https://github.com/markuskooche/PokemonGame" file="./logos/java.svg" />
+                <Language language="Laravel" link="https://spaceplace.pangoon.de" file="./logos/laravel.svg" />
             </div>
             <div v-if="isMobile()" class="language-container-mobile">
                 <LanguageMobile language="Python" link="https://github.com/markuskooche/ChessGame" file="./logos/python.svg" />
                 <LanguageMobile language="Vue.js" link="https://github.com/markuskooche/PortfolioWebpage" file="./logos/vue.svg" />
-                <LanguageMobile language="Java" link="https://github.com/markuskooche/PokemonGame" file="./logos/java.svg" />
+                <LanguageMobile language="Laravel" link="https://spaceplace.pangoon.de" file="./logos/laravel.svg" />
             </div>
             <p>I am now available for you...</p>
         </div>
