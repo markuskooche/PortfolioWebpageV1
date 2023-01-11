@@ -8,7 +8,7 @@
 
 ## About the Project
 
-Version: 1.1.3
+Version: 1.1.4
 
 I built this website to introduce myself and my projects. The site was developed completely with Vue.js and served to get a taste of the framework.
 So don't expect this to be a perfectly structured Vue.js project.
@@ -91,6 +91,7 @@ The site is accessible at <a href="https://www.markuskooche.com/" target="_blank
 | 1.1.1   | fixed a bug which did not open resume since |
 | 1.1.2   | added licence type MIT  (and file)          |
 | 1.1.3   | updated projects                            |
+| 1.1.4   | updated projects & packages                 |
 
 
 ## Inspired by Brittany Chiang
