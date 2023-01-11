@@ -3,9 +3,11 @@
         <h1 class="headline"><span class="number">02.</span>Projects<span class="slogan"></span></h1>
         <div class="timeline">
             <ul>
-                <Project project="SpacePlace" date="October, 2021" text="A platform to play games with colleagues, track each other's scores and compare each other through statistics." tag="Laravel" link="https://spaceplace.pangoon.de" />
+                <Project project="DataScience" date="January, 2022" text="A python data science tool to fetch tweets from the twitter api and analyze the collected dataset." tag="Python" link="https://github.com/markuskooche/DataScience" />
+                <Project project="Spaceplace" date="October, 2021" text="A platform to play games with colleagues, track each other's scores and compare each other through statistics." tag="Laravel" link="https://spaceplace.pangoon.de" />
+                <Project project="PartySpark" date="Juni, 2021" text="A platform to meet with people active and find new friends in the process." tag="Laravel" link="https://partyspark.de" />
                 <Project project="LightSwitch" date="April, 2021" text="A module for the ESP8266 to use Apple HomeKit and Siri to control the lights and adjust the colors if necessary." tag="MicroPython" link="https://github.com/markuskooche/LightSwitch" />
-                <Project project="PortfolioWebpage" date="February, 2021" text="First version of my personal portfolio website built with Vue.js. This project was for learning Vue.js." tag="Vue.js" link="https://github.com/markuskooche/PortfolioWebpage" />
+                <Project project="PortfolioWebpage" date="February, 2021" text="First version of my personal portfolio website built with Vue.js. This project was for learning Vue.js." tag="Vue.js" link="https://github.com/markuskooche/PortfolioWebpageV1" />
                 <Project project="ChessGame" date="January, 2021" text="A chess engine with a GUI and different algorithms of computer-based opponents. Built completely object-oriented with Python." tag="Python" link="https://github.com/markuskooche/ChessGame" />
                 <Project project="CryptoCurrency" date="October, 2020" text="A simple implementation of a blockchain. This version also includes account details to better track transactions." tag="Python" link="https://github.com/markuskooche/CryptoCurrency" />
             </ul>
